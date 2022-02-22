@@ -46,14 +46,14 @@ My-yellow : #FAED6A
 }
 .nav-link {
     color: var(--lighter-color);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Times New Roman", Times, serif;
     font-weight: bolder;
 }
 .navbar-brand {
   font-size: 2vw;
     cursor: default;
     /* color: linear-gradient(to bottom right, var(--gold-color), var(--golder-color)); */
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Times New Roman", Times, serif;
     font-weight: bolder;
     letter-spacing: .5rem;
     background: linear-gradient(to bottom right, var(--head-color), var(--header-color) 84%);
@@ -92,7 +92,7 @@ body {
     background: -moz-radial-gradient(circle at 0 0, var(--darkest-color), var(--darker-color));
     background: radial-gradient(circle at 0 0, var(--darkest-color), var(--darker-color)); */
 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .container {
@@ -127,7 +127,7 @@ body {
 }
 
 .btn-outline-primary {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Times New Roman", Times, serif;
   color:var(--lighter-color);
   background-color:transparent;
   background-image:none;
@@ -157,7 +157,7 @@ body {
 
 p, h1, h2, h3, h4, h5, h6, ul, li {
   color: var(--lighter-color);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Times New Roman", Times, serif;
 }
 
 hr {
