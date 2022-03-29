@@ -11,11 +11,11 @@ My-yellow : #FAED6A
     /* --darkest-color: #040005;
     --darker-color: #241929;  */
 
-    --body-1: #530005;
-    --body-2: #43000D;
-    --body-3: #29011C;
-    --body-4: #100328;
-    --body-5: #010332;
+    --body-1: #533537;
+    --body-2: #443034;
+    --body-3: #31212c;
+    --body-4: #2d2738;
+    --body-5: #2d2e3f;
 
     --darkest-color: #a3a3a3;
     --darker-color: #d6d6d6;
@@ -185,6 +185,19 @@ hr {
 .columns-5 {
   width: 20%;
 }
+
+.sort-container {
+  display: none;
+}
+
+.sort-container.active {
+  display: block;
+}
+
+
+
+/* ============= */
+/* Footer Styles */
 
 footer {
   

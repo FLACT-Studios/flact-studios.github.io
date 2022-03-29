@@ -14,14 +14,14 @@ $(document).ready(function(){
             $('.sort-button').removeClass('active');
             $(this).addClass('active');
 
-            $('.tab-container').addClass('active');
+            $('.sort-container').addClass('active');
         } else {
             var sort = this.id + "-container";
 
             $('.sort-button').removeClass('active');
             $(this).addClass('active');
     
-            $('.tab-container').removeClass('active');
+            $('.sort-container').removeClass('active');
             $('#' + sort).addClass('active');
         }
 

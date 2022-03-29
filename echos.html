@@ -48,188 +48,526 @@
 
   <div class="container-fluid info-container">
 
-    <div class="container tab-container col-sm-12 col-md-10 col-lg-8 col-xl-8 active" id="work-container">
+    <div class="container tab-container col-sm-12 col-md-10 col-lg-8 col-xl-8 active" id="summary-container">
+      <h1>Echos</h1>
+      <hr/>
+      <p>Echos is a third-person 3D adventure/puzzle game that revolves around the player who is attempting to steal a
+         treasure from a ruined castle. The player will encounter skeletons of those who died in whatever conflict
+          left the castle in ruin. The player will have an ability called “Echo.” This will allow them to interact with
+           a skeleton to see the moments leading to their deaths, and they will then be able to take control of those characters
+            and play as them in the past. The actions the player takes while controlling these characters of the past will
+             affect the present. The player must utilize this ability to solve puzzles that will lead them further into the ruins.
+        </p>
+        <button id="everything" class="btn btn-outline-primary mr-2 sort-button">All</button>
+        <button id="proposal" class="btn btn-outline-primary mr-2 sort-button">Proposal</button>
+        <button id="midterm" class="btn btn-outline-primary mr-2 sort-button">Midterm</button>
+    </div>
+
+    <div class="container sort-container col-sm-12 col-md-10 col-lg-8 col-xl-8 active" id="proposal-container">
       <div class="pb-3">
-        <h1 style="text-align: center;">Echos</h1>
+        <h1 style="text-align: center;">Game Proposal</h1>
       </div>
 
-      <div class="pb-5">
-        <h3>Concept</h3>
-        <p>Echos is a top down 3D adventure/puzzle game which revolves
-           around the player taking control of a thief who is attempting
-            to steal a treasure from a ruined castle. The player will
-             encounter skeletons of those who died in whatever conflict
-              left the castle ruined. The player will gain the ability,
-               “Echo.” This will allow them to interact with a skeleton
+      <div id="accordion">
+        <div class="card mb-2">
+          <div class="card-header" id="headingOne">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h5 class="mb-0">Concept</h5>
+              </button>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <p>
+                Echos is a top down 3D adventure/puzzle game which revolves
+                around the player taking control of a thief who is attempting
+                to steal a treasure from a ruined castle. The player will
+                encounter skeletons of those who died in whatever conflict
+                left the castle ruined. The player will gain the ability,
+                “Echo.” This will allow them to interact with a skeleton
                 to see the moments leading to their deaths, and they will
-                 then be able to take control of those characters and play
-                  as them in the past. The actions the player takes while
-                   controlling these characters of the past will affect
-                    the present. The player must utilize this ability
-                     to solve puzzles that will lead them further into
-                      the ruins, and in the process they will save the
-                       characters whom they possess.
-
-        </p>
-        <div class="col-4" style="margin: auto;">
-          <img src="media/artwork/castle_hall.jpg" alt="Castle">
-        </div>
-      </div>
-
-      <div class="pb-5">
-        <h3>Story Details</h3>
-        <p>Siege left the castle ruined and destroyed. The MC is an outlaw. They heard of a treasure which was lost in the ruins of the castle,
-         and they are exploring the ruins in order to find it. They somehow discover the Echo ability, and use it to navigate the ruins.
-          At the end of the game they will face a choice between taking the treasure or leaving it be.
-        </p>
-        <p>
-          Many people were killed in the siege. The player will be able to encounter three of the perished which they can then use Echo on: a Knight, a Mage, and a Thief.
-        </p>
-        <ul>
-          <li>Knight</li>
-            <ul>
-              <li>Captain of the guard, a brave and honorable individual who died trying to protect the Kingdom. This is the first character the Player will come across.
-              </li>
-            </ul>
-          <li>Mage</li>
-            <ul>
-              <li>An advisor to the crown, who was killed after they failed to cast a spell to stop the siege. They will be able to cast spells which can interact with the environment.
-              </li>
-            </ul>
-          <li>Thief</li>
-            <ul>
-              <li>An outlaw who snuck in trying to steal something from the castle but was trapped by the conflict when the siege began. The last character the Player finds.
-                 The MC will find similarities between themselves and the Thief, and will lead to growth in the MC.
-              </li>
-            </ul>
-        </ul>
-        <div class="row">
-          <div class="col-4">
-            <img src="media/artwork/knight.jpg" alt="Knight">
-          </div>
-          <div class="col-4">
-            <img src="media/artwork/mage.jpg" alt="Mage">
-          </div>
-          <div class="col-4">
-            <img src="media/artwork/thief.jpg" alt="Thief">
+                then be able to take control of those characters and play
+                as them in the past. The actions the player takes while
+                controlling these characters of the past will affect
+                the present. The player must utilize this ability
+                to solve puzzles that will lead them further into
+                the ruins, and in the process they will save the
+                characters whom they possess.
+              </p>
+              <div class="col-4" style="margin: auto;">
+                <img src="media/artwork/castle_hall.jpg" alt="Castle">
+              </div>
+              </div>
           </div>
         </div>
+        <div class="card mb-2">
+          <div class="card-header" id="headingTwo">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              <h5 class="mb-0">Story Details</h5>
+            </button>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion2">
+            <div class="card-body">
 
-      </div>
-         
+              <p>
+                Siege left the castle ruined and destroyed. The MC is an outlaw. They heard of a treasure which was lost in the ruins of the castle,
+                and they are exploring the ruins in order to find it. They somehow discover the Echo ability, and use it to navigate the ruins.
+                At the end of the game they will face a choice between taking the treasure or leaving it be.
+              </p>
+              <p>
+                Many people were killed in the siege. The player will be able to encounter three of the perished which they can
+                then use Echo on: a Knight, a Mage, and a Thief.
+              </p>
 
-      <div class="pb-5">
-        <h3>Art Style</h3>
-        <p>Echos will have a somewhat cartoonish, yet serious art style. The general layout of the castle will remain the same
-          between the past & present, but the aesthetic and design will change.
-        </p>
-        <p>
-          <span class="bold underline">The Present</span> will have a solemn air to it, being mostly quiet and empty. The castle is in ruins, any
-          life that once inhabited it having long since absconded. The game will take place on a quiet and cloudy afternoon, and
-           as such the lighting will be gray and moody. The general color palette will be a mix or dark grays and light blues/greens.
-         </p>
-         <p>
-         <span class="bold underline">The Past</span> will instead be energetic and chaotic, with distant fires and shouting in the background. As it is actively
-          under siege, the castle will have sustained damage, but will still retain some of its glory as it has not yet been left
-           abandoned. The scene will take place in the afternoon, the general color palette will be more shadowy oranges and yellows.
-         </p>
-      </div> 
+              <div class="row">
+                <div class="col-4">
+                  <h5>Knight:</h5>
+                  <p>
+                    Captain of the guard, a brave and honorable individual who died trying to protect the Kingdom. This is the first character the Player will come across.
+                  </p>
+                </div>
+                <div class="col-4">
+                  <h5>Mage:</h5>
+                  <p>
+                    An advisor to the crown, who was killed after they failed to cast a spell to stop the siege. They will be able to cast spells which can interact with the environment.
+                  </p>
+                </div>
+                <div class="col-4">
+                  <h5>Thief:</h5>
+                  <p>
+                    An outlaw who snuck in trying to steal something from the castle but was trapped by the conflict when the siege began. The last character the Player finds.
+                    The MC will find similarities between themselves and the Thief, and will lead to growth in the MC.
+                  </p>
+                </div>
+              </div>
 
-      <div class="pb-5">
-        <h3>Game Mechanics</h3>
-        <p>The main goal of the game is to reach the end while saving the characters along the way. The MC's main drive will most likely
-           differ slightly from that of the player, as they will be driven more by the treasure than by saving the other characters.
-        </p>
-        <p>
-          <span class="bold underline">Echo</span>, the ability which the player will use to solve puzzles, will have several functional components.
-        </p>
-        <ul>
-          <li>During gameplay, the user will encounter skeletons in the castle with a visual aura about them.
-          </li>
-          <li>To use Echo, the player must walk up to a skeleton with an aura and interact with it. 
-          </li>
-          <li>A visual effect will take place, and the scene will change to the past.
-          </li>
-          <li>After a character is saved through Echo, a short cutscene will play showing them escaping their predicament,
-             and their skeleton will disappear to signify that they have been saved.
-          </li>
-          <li>Each character will have different mechanics available to them which the Player can utilize.
-          </li>
-          <li>The first time the Player switches to a new character, instead of gaining control of that character,
-             they will instead be shown a short scene of the character and their death, upon which the Echo will
-              end and the player will take back control of the MC. This will serve to introduce the player to the
-               Character, and the very first time the Player uses Echo it will reinforce that they are taking control
-                of the character in the moments before their death. Any time the player uses Echo, the player will
-                 instead gain control over the character and can begin solving the puzzle.
-          </li>
-        </ul>
-         
-      </div> 
+              <div class="row" style="margin-bottom: 1rem;">
+                <div class="col-4">
+                  <img src="media/artwork/concept_knight.jpg" alt="Knight">
+                </div>
+                <div class="col-4">
+                  <img src="media/artwork/concept_mage.jpg" alt="Mage">
+                </div>
+                <div class="col-4">
+                  <img src="media/artwork/concept_thief.jpg" alt="Thief">
+                </div>
+              </div>
 
-
-      <div class="pb-5">
-        <h3>Characters</h3>
-        <ul>
-          <li>Each Character has unique abilities which they can use to navigate and interact with the world. Some of the actions performed
-             by these characters will have permanent consequences which affect the present.
-          </li>
-          <li>Knight</li>
-            <ul>
-              <li>Can push heavy objects around.
-              </li>
-              <li>Can use their shield while moving to defend themselves.
-              </li>
-            </ul>
-          <li>Mage</li>
-            <ul>
-              <li>Can take control of small animals.
-              </li>
-              <li>Fire Magic to burn things.
-              </li>
-              <li>Water Magic to fill containers.
-              </li>
-              <li>Wind Magic to push objects around from a distance.
-              </li>
-            </ul>
-          <li>Thief</li>
-            <ul>
-              <li>Can use a rope to climb up & down.
-              </li>
-              <li>Can use lockpicks to open doors.
-              </li>
-              <li>Has a crossbow to fire at targets from a distance.
-              </li>
-            </ul>
-        </ul>
-         
-      </div>
-
-
-      <div class="pb-5">
-        <h3>Example Puzzle Ideas</h3>
-        <ul>
-          <li>The knight can move large stones into specific positions to open up new areas/to complete a basic puzzle.
-          </li>
-          <li>Utilize enemy weapons to solve certain puzzles. 
-          </li>
-          <li>Rogue can use a quick burst of speed to maneuver through certain areas on the map. (Maybe can reach areas unreachable without the speed boost).
-          </li>
-          <li>Simple matching/memorization minigame. 
-          </li>
-          <li>Mage can either create or take over a small animals movement so that he can use it to reach unreachable areas. 
-          </li>
-          <li>Have some items transfer from room to room that can be used to solve similar puzzles.
-          </li>
-        </ul>
-
-        <div class="col-3" style="margin: auto;">
-          <img src="media/artwork/stairs.jpg" alt="Stairs">
+            </div>
+          </div>
         </div>
-         
-      </div>
+        <div class="card mb-2">
+          <div class="card-header" id="headingThree">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              <h5 class="mb-0">Art Style</h5>
+            </button>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              
+              <p>
+                Echos will have a somewhat cartoonish, yet serious art style. The general layout of the castle will remain the same
+                between the past & present, but the aesthetic and design will change.
+              </p>
+              <p>
+                The Present will have a solemn air to it, being mostly quiet and empty. The castle is in ruins, any
+                life that once inhabited it having long since absconded. The game will take place on a quiet and cloudy afternoon, and
+                as such the lighting will be gray and moody. The general color palette will be a mix or dark grays and light blues/greens.
+              </p>
+              <p>
+                The Past will instead be energetic and chaotic, with distant fires and shouting in the background. As it is actively
+                under siege, the castle will have sustained damage, but will still retain some of its glory as it has not yet been left
+                abandoned. The scene will take place in the afternoon, the general color palette will be more shadowy oranges and yellows.
+              </p>
 
+            </div>
+          </div>
+        </div>
+        <div class="card mb-2">
+          <div class="card-header" id="headingFour">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              <h5 class="mb-0">Game Mechanics</h5>
+            </button>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+            <div class="card-body">
+              
+              <p>The main goal of the game is to reach the end while saving the characters along the way. The MC's main drive will most likely
+                differ slightly from that of the player, as they will be driven more by the treasure than by saving the other characters.
+             </p>
+             <p>
+               Echo, the ability which the player will use to solve puzzles, will have several functional components.
+             </p>
+             <ul>
+               <li>During gameplay, the user will encounter skeletons in the castle with a visual aura about them.
+               </li>
+               <li>To use Echo, the player must walk up to a skeleton with an aura and interact with it. 
+               </li>
+               <li>A visual effect will take place, and the scene will change to the past.
+               </li>
+               <li>After a character is saved through Echo, a short cutscene will play showing them escaping their predicament,
+                  and their skeleton will disappear to signify that they have been saved.
+               </li>
+               <li>Each character will have different mechanics available to them which the Player can utilize.
+               </li>
+               <li>The first time the Player switches to a new character, instead of gaining control of that character,
+                  they will instead be shown a short scene of the character and their death, upon which the Echo will
+                   end and the player will take back control of the MC. This will serve to introduce the player to the
+                    Character, and the very first time the Player uses Echo it will reinforce that they are taking control
+                     of the character in the moments before their death. Any time the player uses Echo, the player will
+                      instead gain control over the character and can begin solving the puzzle.
+               </li>
+             </ul>
+
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-2">
+          <div class="card-header" id="headingFive">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+              <h5 class="mb-0">Characters</h5>
+            </button>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+            <div class="card-body">
+              
+              <p>Each Character has unique abilities which they can use to navigate and interact with the world. Some of the actions performed
+                by these characters will have permanent consequences which affect the present.
+             </p>
+
+              <div class="row" style="margin-bottom: 1rem;">
+                <div class="col-4">
+                  <h5>Knight</h5>
+                  <ul>
+                    <li>Can push heavy objects around.
+                    </li>
+                    <li>Can use their shield while moving to defend themselves.
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <h5>Mage</h5>
+                  <ul>
+                    <li>Can take control of small animals.
+                    </li>
+                    <li>Fire Magic to burn things.
+                    </li>
+                    <li>Water Magic to fill containers.
+                    </li>
+                    <li>Wind Magic to push objects around from a distance.
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <h5>Thief</h5>
+                  <ul>
+                    <li>Can use a rope to climb up & down.
+                    </li>
+                    <li>Can use lockpicks to open doors.
+                    </li>
+                    <li>Has a crossbow to fire at targets from a distance.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-2">
+          <div class="card-header" id="headingSix">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+              <h5 class="mb-0">Example Puzzle Ideas</h5>
+            </button>
+          </div>
+          <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+            <div class="card-body">
+              
+              <ul>
+                <li>The knight can move large stones into specific positions to open up new areas/to complete a basic puzzle.
+                </li>
+                <li>Utilize enemy weapons to solve certain puzzles. 
+                </li>
+                <li>Rogue can use a quick burst of speed to maneuver through certain areas on the map. (Maybe can reach areas unreachable without the speed boost).
+                </li>
+                <li>Simple matching/memorization minigame. 
+                </li>
+                <li>Mage can either create or take over a small animals movement so that he can use it to reach unreachable areas. 
+                </li>
+                <li>Have some items transfer from room to room that can be used to solve similar puzzles.
+                </li>
+              </ul>
+      
+              <div class="col-3" style="margin: auto;">
+                <img src="media/artwork/stairs.jpg" alt="Stairs">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
 
     </div>
+
+    <div class="container sort-container col-sm-12 col-md-10 col-lg-8 col-xl-8 active" id="midterm-container">
+      <div class="pb-3">
+        <h1 style="text-align: center;">Midterm Progress</h1>
+      </div>
+
+      <div id="accordion">
+        <div class="card mb-2">
+          <div class="card-header" id="headingSeven">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                <h5 class="mb-0">Software Architecture</h5>
+              </button>
+          </div>
+          <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+            <div class="card-body">
+              <p>
+                Echos is structured around the Global script SwitchCharacter, which is connected to an element called
+                GameManager which keeps track of which character is currently being used, as well as which character is
+                being switched to. Echos first loads the base player movement and controls and then uses SwitchCharacter
+                to activate the correct character’s scripts, as well as set the camera to follow the correct character.
+                Each character's attributes are set up in their own particular script, which is activated by SwitchCharacter.
+                That character’s script then takes over, loading the correct movement, commands, abilities, etc.
+              </p>
+              <p>
+                In addition, there is a script for each character's ability, which is called by each character’s script when the ability is used.
+                There are two scripts for movement: PlayerMovement and NewPlayerMovement. NewPlayerMovement is set up around the camera, PlayerMovement
+                is simple tank controls. NewPlayerMovement is the primary movement control scheme used by most characters, though is less stable.
+                PlayerMovement serves as a more stable base movement in case there are bugs with the regular movement. There are also scripts for
+                various interactable objects.
+              </p>
+              </div>
+          </div>
+        </div>
+        <div class="card mb-2">
+          <div class="card-header" id="headingEight">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+              <h5 class="mb-0">Current Features</h5>
+            </button>
+          </div>
+          <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+            <div class="card-body">
+
+              <div class="row">
+                <div class="col-3">
+                  <h5>Main Character:</h5>
+                  <p>
+                      The main character moves around the map to each of the skeletons and can interact with them to take control of them.
+                      Each of the playable characters has the same base movement and control functionality, based on the main character;
+                      a simple 3rd person camera that follows the mouse and WASD movement.
+                  </p>
+                </div>
+                <div class="col-3">
+                  <h5>Knight:</h5>
+                  <p>
+                    The Knight has two functionalities, Shield and Lift. When the player presses Q, the Knight defends himself with his shield.
+                    There are also weights that the player can find. When the player presses E while next to the weight, the Knight
+                    will pick up the weight and weight and can move it around with slowed movement.
+                  </p>
+                </div>
+                <div class="col-3">
+                  <h5>Mage:</h5>
+                  <p>
+                    The Mage has two functionalities, Fireball and Transform. When the player presses fireball launches a fireball straight
+                    forwards, and if it comes into contact with a box once, then the box is burnt. If a burnt box is hit by a fireball,
+                    it is destroyed. Transform turns the mage into a rat, and can then fit into smaller areas
+                  </p>
+                </div>
+                <div class="col-3">
+                  <h5>Thief:</h5>
+                  <p>
+                    The Thief will have two functionalities, Dash and Climb, though only Climb is currently implemented. When the player
+                    approaches a climbable wall, they can press Q to climb the wall. Dash is not yet implemented.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row" style="margin-bottom: 1rem;">
+                <div class="col-4">
+                  <img src="media/artwork/knightSkull.png" alt="Thief">
+                </div>
+                <div class="col-4">
+                  <img src="media/artwork/wizardSkull.png" alt="Thief">
+                </div>
+                <div class="col-4">
+                  <img src="media/artwork/thiefSkull.png" alt="Thief">
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-4">
+                  <h5>Knight's Puzzle:</h5>
+                  <p>
+                    The knight’s puzzle consists of a weighted object and a pressure plate. The player needs to lift the
+                    object and place it on the pressure plate to open a gate and get the key.
+                  </p>
+                </div>
+                <div class="col-4">
+                  <h5>Mage's Puzzle:</h5>
+                  <p>
+                    The mage’s puzzle consists of a small hole in the wall with a box blocking it off. The player first
+                     has to use Fireball to burn the box, and then has to Transform into a rat in order to get through
+                      the hole and get the key.
+                  </p>
+                </div>
+                <div class="col-4">
+                  <h5>Thief's Puzzle:</h5>
+                  <p>
+                    The thief’s puzzle consists of a climbable wall. The player must locate the wall and then climb up it to get the key.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <h5>User Interface:</h5>
+              <p>
+                Echos currently has a simple UI with placeholder particle effects in the background, with a ‘Play’ button, an ‘Options’ button,
+                and an ‘Exit’ button, all with their features implemented. The options button brings you to the options menu, which has
+                unimplemented settings that, in the finished game, the user will be able to interact with to change settings such as volume. 
+              </p>
+
+              <hr>
+
+              <h5>Setting/Map:</h5>
+              <p>
+                The map is divided into three sections, with a puzzle in each area. The Skeletons of the other three playable characters are
+                laid out in their separate rooms. There is a weight and pressure plate puzzle for the knight, a transformation puzzle for
+                the wizard, and a climbing puzzle for the thief. At the end of each puzzle, the player can find a key, which they can use
+                to unlock doors.
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="card mb-2">
+          <div class="card-header" id="headingNine">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+              <h5 class="mb-0">Contributions</h5>
+            </button>
+          </div>
+          <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+            <div class="card-body">
+              
+              <h5>Zachary Faulkner:</h5>
+              <p>
+                Zachary focused his time on designing and programming the Menu UI, as well as setting up all of the functionality for
+                it. He also was in charge of the in-game UI, such as the cooldown UI for the mage. Zachary also was one of the primary
+                contributors to the Progress Report Document.
+              </p>
+
+              <hr>
+
+              <h5>Logan Lafauci:</h5>
+              <p>
+                Logan primarily worked on new camera controls and movement. He created a simple pressure plate puzzle for the knight’s
+                boulder mechanic. He also playtested, looked for bugs, and reported/helped to fix them. Logan also worked with Gerald
+                to create simple puzzles to show off the character mechanics.
+              </p>
+
+              <hr>
+
+              <h5>Gerald Anthony:</h5>
+              <p>
+                Gerald was one of the primary contributors to game development. He spent his time developing the core gameplay of our
+                game, Echos. This includes creating the functionality for the special ability and movement of our character and also
+                setting up the environment itself. Gerald set up the project in Plastic SCM so that the project could be shared with all
+                four of our game developers.
+              </p>
+
+              <hr>
+
+              <h5>Dean Compton:</h5>
+              <p>
+                Dean focused on updating the website and documentation of the project. He was also one of the primary contributors to 
+                the progress report document as well as the project presentation and OPPM sheet. He helped set up GitHub and set up access
+                for the team so that everyone had access to the website files and backup files for the Unity game.
+              </p>
+
+              <hr>
+
+              <h5>Shamar Thompkins:</h5>
+              <p>
+                Shamar spent his time working on Blender models for characters and the skeleton objects meant to be interacted with by the
+                character. He made the skeleton models for the wizard, knight, and thief characters. Also, he made some prototype models
+                for the characters themselves which are still being conceptualized.
+              </p>
+            
+            </div>
+          </div>
+        </div>
+        <div class="card mb-2">
+          <div class="card-header" id="headingTen">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+              <h5 class="mb-0">Future Plans</h5>
+            </button>
+          </div>
+          <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+            <div class="card-body">
+              
+              <div class="row">
+                <div class="col-6">
+                  <h5>Map:</h5>
+                  <p>
+                    The finished game will have multiple sequential areas that the player must navigate in order, but
+                    for now, the map is all laid out in front of the player to attempt any of the current puzzles. Many new puzzles
+                    will eventually be added for each section, and new mechanics will have to be implemented in order to create
+                    them. For example, for puzzles pertaining to the knight’s shield ability, there will be flame obstacles
+                    added which the knight would have to protect himself from.
+                  </p>
+                </div>
+                <div class="col-6">
+                  <h5>Thief:</h5>
+                  <p>
+                    The Thief’s dash ability will be implemented. When the player presses E while playing as the thief, they\
+                    will perform a short dash.
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <h5>User Interface:</h5>
+              <p>
+                Additions to the UI will include more cooldown bars for new abilities as they are added, a portrait of the character
+                which is currently being used by the player, more options, as well as functionality for those options, in the settings
+                menu, as well as the ability to pause the game. Dialogue functionality would also be implemented so that an actual
+                story can be told.
+              </p>
+
+              <hr>
+
+              <div class="row">
+                <div class="col-6">
+                  <h5>Map Model:</h5>
+                  <p>
+                    We hope to have a complete and finished map with a detailed setting to make the game feel immersive and complete.
+                    The map model includes floor, ceiling, and roof designs as well as designs for individual objects used
+                    for puzzles and the general aesthetics of the game.
+                  </p>
+                </div>
+                <div class="col-6">
+                  <h5>Final Character Models:</h5>
+                  <p>
+                    The goal is to stem from the prototype models originally made to make a set of characters that make them
+                    feel interconnected.
+                  </p>
+                </div>
+              </div>
+           
+           
+            </div>
+          </div>
+        </div>
+      </div>
+         
+      </div>
+
 
   </div>
 

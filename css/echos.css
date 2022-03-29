@@ -14,3 +14,32 @@ p span {
 .underline {
     text-decoration: underline;
 }
+
+#summary-container>p {
+    color: white;
+}
+
+
+p {color: black;}
+li {color: black;}
+h5 {color: black;}
+
+.card-body>p {
+    color: black;
+}
+.card-body>h5 {
+    color: black;
+}
+.card-header>button>h5 {
+    text-decoration: none !important;
+    color: black;
+}
+.card-header>h5:hover {
+    text-decoration: underline;
+}
+.card-header>.btn-link:active {
+    font-weight: bold;
+}
+.card-header>.btn-link {
+    text-decoration: none;
+}
