@@ -1,12 +1,3 @@
-/* Colors
-
-My-purple : #692C71
-My-red : #B83B5D
-My-orange : #F0895C
-My-yellow : #FAED6A
-
-*/
-
 :root {
     /* --darkest-color: #040005;
     --darker-color: #241929;  */
@@ -16,6 +7,16 @@ My-yellow : #FAED6A
     --body-3: #31212c;
     --body-4: #2d2738;
     --body-5: #2d2e3f;
+
+    --background-color: #000000;
+    --nav-color: rgba(0, 0, 0, 0.836);
+
+    --logo-secondary-color: #595959;
+
+    --gradient-one-color: #533537;
+    --gradient-two-color: #2d2e3f;
+
+    --mid-gradient-color: rgb(64,49,63);
 
     --darkest-color: #a3a3a3;
     --darker-color: #d6d6d6;
@@ -40,41 +41,92 @@ My-yellow : #FAED6A
 
 }
 
+/* ==================================================== */
+/*                      Navbar                          */
+/* ==================================================== */
 
 .navbar {
-  background-image: linear-gradient(to bottom right, var(--dark-color), var(--darkish-color));
+  overflow: hidden;
+  background-color: var(--nav-color);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  display: block;
 }
+
+.navbar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-content-left {
+  display: flex;
+  justify-content: right;
+}
+.navbar-content-right {
+  display: flex;
+  justify-content: left;
+}
+
+.navbar img {
+  display: flex;
+  justify-content: center;
+}
+
+
+#navbarTogglerDemo02.show {
+  display: block !important;
+}
+
+@media (pointer: fine) {
+  #navbarTogglerDemo02 {
+    display: none !important;
+  }
+}
+
+
+@media (hover: none) {
+  .navbar-content-left {
+    display: none !important;
+    justify-content: left;
+  }
+  .navbar-content-right {
+    display: none !important;
+  }
+}
+
 .nav-link {
-    color: var(--lighter-color);
-    font-family: "Times New Roman", Times, serif;
-    font-weight: bolder;
+  color: var(--logo-secondary-color);
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+
+
+  background: 
+  linear-gradient(to right, rgba(100, 200, 200, 0), rgba(100, 200, 200, 0)),
+  linear-gradient(to right, var(--gradient-one-color), var(--gradient-two-color));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
 }
-.navbar-brand {
-  font-size: 2vw;
-    cursor: default;
-    /* color: linear-gradient(to bottom right, var(--gold-color), var(--golder-color)); */
-    font-family: "Times New Roman", Times, serif;
-    font-weight: bolder;
-    letter-spacing: .5rem;
-    background: linear-gradient(to bottom right, var(--head-color), var(--header-color) 84%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.nav-link:hover,
+.nav-link:focus {
+background-size: 0 0.1em, 100% 0.1em;
+color: var(--mid-gradient-color);
 }
-.nav-link.nav-link.disabled {
-  cursor: default;
+.nav-link.active {
+background-size: 0 0.1em, 100% 0.1em;
 }
-.navbar-brand:hover {
-    color: var(--lighter-color);
-}
-.nav-link:hover {
-    color: var(--light-color);
-}
-.nav-link.disabled:hover {
-    color: #6c757d;
-}
+
 .navbar-toggler-icon {
-    color: var(--lighter-color);
+  color: var(--logo-secondary-color);
 }
+
+/* ==================================================== */
+/*                     End Navbar                       */
+/* ==================================================== */
 
 html {
   min-height: 100%;
@@ -83,22 +135,42 @@ html {
 
 body {
   min-height: 100%;
-    background-image: linear-gradient(to bottom right, var(--darkest-color), var(--darker-color));
+  background-color: black;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
 
-    background-image: radial-gradient(farthest-corner at 0% 0%,var(--body-1), var(--body-2), var(--body-3), var(--body-4), var(--body-5), var(--body-5), var(--body-4), var(--body-3), var(--body-2), var(--body-1));
+/* Main content */
+.main {
+  margin-top: 100px; /* Add a top margin to avoid content overlay */
+  background-image: radial-gradient(farthest-corner at 0% 0%,var(--body-1), var(--body-2), var(--body-3), var(--body-4), var(--body-5), var(--body-5), var(--body-4), var(--body-3), var(--body-2), var(--body-1));
+}
 
-    /* background: var(--darkest-color);
-    background: -webkit-radial-gradient(circle at 0 0, var(--darkest-color), var(--darker-color));
-    background: -moz-radial-gradient(circle at 0 0, var(--darkest-color), var(--darker-color));
-    background: radial-gradient(circle at 0 0, var(--darkest-color), var(--darker-color)); */
+.container-fluid {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
 
-    font-family: "Times New Roman", Times, serif;
+
+.even-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: transparent;
+}
+
+.odd-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
 }
 
 .container {
   margin: 15px;
   padding: 15px;
-  background-image: linear-gradient(to bottom right, var(--card-color), var(--carder-color));
   border-radius: 5px;
 }
 .container-fluid {
@@ -127,7 +199,7 @@ body {
 }
 
 .btn-outline-primary {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   color:var(--lighter-color);
   background-color:transparent;
   background-image:none;
@@ -157,12 +229,16 @@ body {
 
 p, h1, h2, h3, h4, h5, h6, ul, li {
   color: var(--lighter-color);
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 }
 
-hr {
-  color: var(--darkest-color);
-  background-color: var(--darkest-color);
+.odd-container hr {
+  background: linear-gradient(to right, var(--gradient-one-color), var(--gradient-two-color));
+  height: 1px;
+}
+
+.even-container hr {
+  background: black;
   height: 1px;
 }
 
@@ -200,8 +276,7 @@ hr {
 /* Footer Styles */
 
 footer {
-  
-  background-image: linear-gradient(to bottom right, var(--dark-color), var(--darkish-color));
+  background-color: rgb(0, 0, 0);
   position: absolute;
   left: 0;
   bottom: 0;
@@ -213,7 +288,7 @@ footer {
   flex-wrap: wrap;
 }
 footer small, footer svg, footer span {
-  color: var(--lighter-color);
+  color: white;
   padding: 5px;
 }
 footer div.row {

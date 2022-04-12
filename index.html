@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="styles/open-iconic-master/png/chevron-right-8x.png" type="image/icon type">
   <title>FLACT</title>
 
   <!-- Bootstrap link -->
@@ -22,173 +23,198 @@
 
 <body>
   <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#">FLACT Studios</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon oi oi-menu"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <div class = navbar-content>
+      <!-- Navbar toggler button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon oi oi-menu"></span>
+      </button>
+      
+      <!-- Navbar on left side of logo -->
+      <div class = navbar-content-left>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active mx-2">
+            <a class="nav-link active" href="">HOME</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- DC logo -->
+      <img class="" src="media/flact_long.png" style="width: 200px;" alt="DC">
+
+      <!-- Navbar on right side of logo -->
+      <div class = navbar-content-right>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="echos.html">ECHOS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02" aria-expanded="false">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active mx-2">
-          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-link active" href="">HOME</a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" href="echos.html">Echos</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link disabled" href="">Individual Projects</a>
+          <a class="nav-link" href="echos.html">ECHOS</a>
         </li>
       </ul>
     </div>
   </nav>
 
-
+<div class="main">
 
   <div class="container-fluid info-container">
 
-    <div class="container tab-container col-sm-12 col-md-10 col-lg-8 col-xl-8 active" id="work-container">
-      <h3>FLACT Studios</h3>
-      <hr/>
-      <p>FLACT Studios is a video game studio created for a semester-long project for the class Computer Science 4263 - Video Game Design at Louisiana State 
-        University. There are five members: Zachary Faulkner, Logan Lafauci, Gerald Anthony, Dean Compton, and Shamar Thompkins. The name 'FLACT' is an acronym for
-        the five members' last names: Faulkner-Lafauci-Anthony-Compton-Thompkins. The team leader is Dean Compton, but everyone in the group plays many important roles in the project.
-        The groups is comprised of four computer science majors and one art major.
-        </p>
+    <div class="odd-container">
+      <div class="container tab-container col-sm-12 col-md-10 col-lg-8 col-xl-8 active" id="about-container">
+        <h3>FLACT Studios</h3>
+        <hr/>
+        <p>FLACT Studios is a video game studio created for a semester-long project for the class Computer Science 4263 - Video Game Design at Louisiana State 
+          University. There are five members: Zachary Faulkner, Logan Lafauci, Gerald Anthony, Dean Compton, and Shamar Thompkins. The name 'FLACT' is an acronym for
+          the five members' last names: Faulkner-Lafauci-Anthony-Compton-Thompkins. The team leader is Dean Compton, but everyone in the group plays many important roles in the project.
+          The groups is comprised of four computer science majors and one art major.
+          </p>
+      </div>
     </div>
 
-    <div class="container tab-container col-sm-12 col-md-10 col-lg-8 col-xl-8 active" id="about-container">
-      <div class="row">
-        <div class="col-8">
-          <h3>Faulkner, Zachary</h3>
-          <hr/>
-          <p>Zachary Faulkner is a third-year student at Louisiana State University majoring in Computer Science
-             with a concentration in software and a minor in English. He has lived in Louisiana all his life.
-              He has been a Teacher's Assistant for the LSU Computer Science Department since his freshman year,
-               helping both teach labs and organize assignments for professors. He also has experience as a quality
-                assurance tester for EA games, where he was able to gain experience in the gaming industry.
-                 On his own time, he enjoys video games, sports, reading, Indian food, and Dungeons & Dragons.
-
-          </p>
-          <div class="row" style="float:left; margin-left:0">
-            <button class="btn btn-outline-primary mr-2 roles">UI Designer</button>
-            <button class="btn btn-outline-primary mr-2 roles">Script Writer</button>
-            <button class="btn btn-outline-primary mr-2 roles">Document Designer</button>
+    <div class="even-container">
+      <div class="container tab-container col-sm-12 col-md-10 col-lg-8 col-xl-8 active" id="school-container">
+        <div class="row">
+          <div class="col-9">
+            <h3>Faulkner, Zachary</h3>
+            <hr/>
+            <p>Zachary Faulkner is a third-year student at Louisiana State University majoring in Computer Science
+               with a concentration in software and a minor in English. He has lived in Louisiana all his life.
+                He has been a Teacher's Assistant for the LSU Computer Science Department since his freshman year,
+                 helping both teach labs and organize assignments for professors. He also has experience as a quality
+                  assurance tester for EA games, where he was able to gain experience in the gaming industry.
+                   On his own time, he enjoys video games, sports, reading, Indian food, and Dungeons & Dragons.
+  
+            </p>
+            <div class="row" style="float:left; margin-left:0">
+              <button class="btn btn-outline-primary mr-2 roles">UI Designer</button>
+              <button class="btn btn-outline-primary mr-2 roles">Script Writer</button>
+              <button class="btn btn-outline-primary mr-2 roles">Document Designer</button>
+            </div>
           </div>
-        </div>
-
-        <div class="col-4">
-          <img src="media/zack.jpg" alt="Zachary Faulkner">
+  
+          <div class="col-3">
+            <img src="media/zack.jpg" alt="Zachary Faulkner">
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container col-sm-12 col-md-10 col-lg-8 col-xl-8 active">
-      
-      <div class="row">
 
-        <div class="col-4">
-          <img src="media/logan.jpg" alt="Logan Lafauci">
-        </div>
-
-        <div class="col-8">
-          <h3>Lafauci, Logan</h3>
-          <hr/>
-          <p>Logan Lafauci is a third-year student at Louisiana State University majoring in computer science with a concentration
-             in software engineering. He is from Gonzales Louisiana and has lived there his entire life. His hobbies are playing
-              video games, watching movies, and reading/collecting comics. He has been programming since 
-              Highschool using: Java, C, C#, JavaScript, Python, and HTML. He has experience as a quality assurance tester
-               from working at Electronic Arts.
-
-          </p>
-          <div class="row" style="float:left; margin-left:0">
-            <button class="btn btn-outline-primary mr-2 roles">Programmer</button>
-            <button class="btn btn-outline-primary mr-2 roles">Storyboarder</button>
-            <button class="btn btn-outline-primary mr-2 roles">Tester</button>
+    <div class="odd-container">
+      <div class="container col-sm-12 col-md-10 col-lg-8 col-xl-8 active">
+        <div class="row">
+          <div class="col-3">
+            <img src="media/logan.jpg" alt="Logan Lafauci">
           </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container col-sm-12 col-md-10 col-lg-8 col-xl-8 active">
-      
-      <div class="row">
-        <div class="col-8">
-          <h3>Anthony, Gerald</h3>
-          <hr/>
-          <p>Gerald Anthony is a third-year Louisiana State University student majoring in computer science with
-             a concentration in software engineering and minoring in Digital Media Arts & Engineering Technology.
-              He is from Baton Rouge and has lived there for his entire life. Gerald's hobbies consist of playing
-               video games and enjoying music. He is interested in programming and game design. He has game development
-                experience from his current internship, where he is developing an educational game.
-
-          </p>
-          <div class="row" style="float:left; margin-left:0">
-            <button class="btn btn-outline-primary mr-2 roles">Programmer</button>
-            <button class="btn btn-outline-primary mr-2 roles">StoryBoarder</button>
-            <button class="btn btn-outline-primary mr-2 roles">Game Designer</button>
+          <div class="col-9">
+            <h3>Lafauci, Logan</h3>
+            <hr/>
+            <p>Logan Lafauci is a third-year student at Louisiana State University majoring in computer science with a concentration
+              in software engineering. He is from Gonzales Louisiana and has lived there his entire life. His hobbies are playing
+                video games, watching movies, and reading/collecting comics. He has been programming since 
+                Highschool using: Java, C, C#, JavaScript, Python, and HTML. He has experience as a quality assurance tester
+                from working at Electronic Arts.
+            </p>
+            <div class="row" style="float:left; margin-left:0">
+              <button class="btn btn-outline-primary mr-2 roles">Programmer</button>
+              <button class="btn btn-outline-primary mr-2 roles">Storyboarder</button>
+              <button class="btn btn-outline-primary mr-2 roles">Tester</button>
+            </div>
           </div>
-        </div>
-
-        <div class="col-4">
-          <img src="media/gerald.jpg" alt="Gerald Anthony">
         </div>
       </div>
     </div>
 
-    <div class="container col-sm-12 col-md-10 col-lg-8 col-xl-8 active">
-      
-      <div class="row">
+        
+    <div class="even-container">
+      <div class="container col-sm-12 col-md-10 col-lg-8 col-xl-8 active">
+        
+        <div class="row">
+          <div class="col-9">
+            <h3>Anthony, Gerald</h3>
+            <hr/>
+            <p>Gerald Anthony is a third-year Louisiana State University student majoring in computer science with
+              a concentration in software engineering and minoring in Digital Media Arts & Engineering Technology.
+                He is from Baton Rouge and has lived there for his entire life. Gerald's hobbies consist of playing
+                video games and enjoying music. He is interested in programming and game design. He has game development
+                  experience from his current internship, where he is developing an educational game.
 
-        <div class="col-4">
-          <img class="s3" src="media/dean.jpeg" alt="Dean Compton">
-        </div>
+            </p>
+            <div class="row" style="float:left; margin-left:0">
+              <button class="btn btn-outline-primary mr-2 roles">Programmer</button>
+              <button class="btn btn-outline-primary mr-2 roles">StoryBoarder</button>
+              <button class="btn btn-outline-primary mr-2 roles">Game Designer</button>
+            </div>
+          </div>
 
-        <div class="col-8">
-          <h3>Compton, Dean</h3>
-          <hr/>
-          <p>Dean Compton is a third-year student at Louisiana State University majoring in computer science with a concentration in software engineering.
-            He is from the Baton Rouge area having lived in Louisiana for twelve years of his life. His hobbies are participating in sports, playing video games, and attending LSU sporting events.
-             Dean's interests include programming, video games, and design.
-             He has an extensive background in web development, having worked at a student job for two and a half years helping develop a web application for an on-campus organization, and now has
-             an internship where he is working on a team to build another web application.
-          </p>
-          <div class="row" style="float:left; margin-left:0">
-            <button class="btn btn-outline-primary mr-2 roles">Programmer</button>
-            <button class="btn btn-outline-primary mr-2 roles">Designer</button>
-            <button class="btn btn-outline-primary mr-2 roles">Web Developer</button>
+          <div class="col-3">
+            <img src="media/gerald.jpg" alt="Gerald Anthony">
           </div>
         </div>
-
       </div>
     </div>
 
-    <div class="container col-sm-12 col-md-10 col-lg-8 col-xl-8 active">
-      
-      <div class="row">
-        <div class="col-8">
-          <h3>Thompkins, Shamar</h3>
-          <hr/>
-          <p>Shamar Thompkins is a fourth-year student at Louisiana State University, majoring in Art with a concentration in Graphic
-             Design and minoring in Digital Media Arts. He is from Charlotte, North Carolina but was born in Augusta, Georgia. Shamar
-              currently plays football for LSU and hopes of becoming an animator after graduation.
-          </p>
-          <div class="row" style="float:left; margin-left:0">
-            <button class="btn btn-outline-primary mr-2 roles">Artist</button>
-            <button class="btn btn-outline-primary mr-2 roles">Designer</button>
+    <div class="odd-container">
+      <div class="container col-sm-12 col-md-10 col-lg-8 col-xl-8 active">
+        <div class="row">
+          <div class="col-3">
+            <img class="s3" src="media/dean.jpeg" alt="Dean Compton">
+          </div>
+          <div class="col-9">
+            <h3>Compton, Dean</h3>
+            <hr/>
+            <p>Dean Compton is a third-year student at Louisiana State University majoring in computer science with a concentration in software engineering.
+              He is from the Baton Rouge area having lived in Louisiana for twelve years of his life. His hobbies are participating in sports, playing video games, and attending LSU sporting events.
+              Dean's interests include programming, video games, and design.
+              He has an extensive background in web development, having worked at a student job for two and a half years helping develop a web application for an on-campus organization, and now has
+              an internship where he is working on a team to build another web application.
+            </p>
+            <div class="row" style="float:left; margin-left:0">
+              <button class="btn btn-outline-primary mr-2 roles">Programmer</button>
+              <button class="btn btn-outline-primary mr-2 roles">Designer</button>
+              <button class="btn btn-outline-primary mr-2 roles">Web Developer</button>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div class="col-4">
-          <img src="media/shamar.jpg" alt="Shamar Thompkins">
+    <div class="even-container">
+      <div class="container col-sm-12 col-md-10 col-lg-8 col-xl-8 active">
+        <div class="row">
+          <div class="col-9">
+            <h3>Thompkins, Shamar</h3>
+            <hr/>
+            <p>Shamar Thompkins is a fourth-year student at Louisiana State University, majoring in Art with a concentration in Graphic
+              Design and minoring in Digital Media Arts. He is from Charlotte, North Carolina but was born in Augusta, Georgia. Shamar
+                currently plays football for LSU and hopes of becoming an animator after graduation.
+            </p>
+            <div class="row" style="float:left; margin-left:0">
+              <button class="btn btn-outline-primary mr-2 roles">Artist</button>
+              <button class="btn btn-outline-primary mr-2 roles">Designer</button>
+            </div>
+          </div>
+          <div class="col-3">
+            <img src="media/shamar.jpg" alt="Shamar Thompkins">
+          </div>
         </div>
       </div>
     </div>
 
   </div>
-
-
+</div>
 
   <footer>
 

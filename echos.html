@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="styles/open-iconic-master/png/chevron-right-8x.png" type="image/icon type">
   <title>FLACT</title>
 
   <!-- Bootstrap link -->
@@ -23,27 +24,51 @@
 
 <body>
   <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#">FLACT Studios</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon oi oi-menu"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <div class = navbar-content>
+      <!-- Navbar toggler button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon oi oi-menu"></span>
+      </button>
+      
+      <!-- Navbar on left side of logo -->
+      <div class = navbar-content-left>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active mx-2">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- DC logo -->
+      <img class="" src="media/flact_long.png" style="width: 200px;" alt="DC">
+
+      <!-- Navbar on right side of logo -->
+      <div class = navbar-content-right>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item mx-2">
+            <a class="nav-link active" href="echos.html">ECHOS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02" aria-expanded="false">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active mx-2">
-          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-link active" href="">HOME</a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" href="echos.html">Echos</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link disabled" href="">Individual Projects</a>
+          <a class="nav-link" href="echos.html">ECHOS</a>
         </li>
       </ul>
     </div>
   </nav>
 
+  <div class="main">
 
 
   <div class="container-fluid info-container">
@@ -570,7 +595,7 @@
 
 
   </div>
-
+</div>
 
 
   <footer>
