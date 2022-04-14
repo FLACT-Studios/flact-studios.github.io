@@ -27,6 +27,46 @@ $(document).ready(function(){
 
     });
 
+    $('#proposal').on("click", function() {
 
+        var element = document.getElementById('proposal-container');
+        var headerOffset = 80;
+        var elementPosition = element.getBoundingClientRect().top;
+        var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
+
+    });
+
+    $('#midterm').on("click", function() {
+
+        var element = document.getElementById('midterm-container');
+        var headerOffset = 80;
+        var elementPosition = element.getBoundingClientRect().top;
+        var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
+
+    });
+
+    $('#final').on("click", function() {
+
+        var element = document.getElementById('final-container');
+        var headerOffset = 80;
+        var elementPosition = element.getBoundingClientRect().top;
+        var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
+
+    });
 
 });
