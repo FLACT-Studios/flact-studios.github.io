@@ -227,6 +227,35 @@ body {
   background-color: var(--lighter-color) !important;
 }
 
+.btn-outline-secondary {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  color:var(--background-color);
+  background-color:transparent;
+  background-image:none;
+  border-color:var(--background-color);
+  margin: auto;
+  width: auto;
+}
+
+.btn-outline-secondary:hover {
+  color: var(--lighter-color);
+  background-color: var(--background-color);
+  border-color: var(--background-color)
+}
+
+.btn-outline-secondary.active,.btn-outline-secondary:active {
+  color: var(--lighter-color) !important;
+  background-color: var(--background-color) !important;
+  border-color: var(--background-color) !important;
+  box-shadow: none !important;
+}
+
+.btn-outline-secondary.focus,.btn-outline-secondary:focus {
+  box-shadow: none;
+  color: var(--lighter-color) !important;
+  background-color: var(--background-color) !important;
+}
+
 p, h1, h2, h3, h4, h5, h6, ul, li {
   color: var(--lighter-color);
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
